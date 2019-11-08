@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class GetUserInfo{
+ 
+        	public static void main(String[] args) {
+                    	
+        	String fn;
+        	//First name
+        	String ln;
+        	//Last name
+        	int ag;
+        	//Your age
+        	int t;
+        	//Time when 10 years are added to you age
+        	
+        	Scanner keyboard = new Scanner (System.in);
+                    	
+System.out.printf("First name? ");
+//> user inputs 1st name
+fn= keyboard.nextLine();
+ 
+System.out.printf("Last name? ");
+//>user inputs last name
+ln = keyboard.nextLine();
+System.out.printf("Your age? ");
+//>user inputs age
+ag = keyboard.nextInt();
+ 
+t=ag +10;
+ 
+ 
+System.out.println("Hello, "+ fn + " " + ln + "!");
+System.out.println("Do you like being " +  ag + " " + "years old?");
+System.out.println("You know, in 10 years, you will be" + " " + t + " " + "years old.");
+System.out.println("Hey, is it OK if I call you " + "\"" + fn + "?\"");
+ 
+}
+}
+
